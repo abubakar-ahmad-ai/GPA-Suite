@@ -1,0 +1,9 @@
+# Professional GPA Suite – Python dependencies
+# All required modules are part of Python's standard library.
+# No pip install needed!
+#
+# Python >= 3.9 recommended
+# tkinter  – built into Python (GUI)
+# json     – built-in
+# csv      – built-in
+# pathlib  – built-in
