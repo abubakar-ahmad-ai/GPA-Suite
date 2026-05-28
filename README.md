@@ -1,92 +1,92 @@
-# 📊 Professional GPA Suite
+# 🎓 Professional GPA Suite
 
-A feature-rich, multi-mode GPA calculator built with Python and Tkinter — no external libraries required.
+A feature-rich GPA Calculator desktop application built with Python & Tkinter.
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
+---
+
+## 📸 Screenshots
+
+### 1. Single Semester Calculator
+
+![Single Semester](screenshots/1_Single_Semester.PNG)
+
+### 2. Semesters by SGPA
+
+![Semesters by SGPA](screenshots/2_Semesters_by_SGPA.PNG)
+
+### 3. Multi-Semester CGPA
+
+![Multi Semester](screenshots/3_Multi_Semesters.PNG)
+
+### 4. Target CGPA Planner
+
+![Target Planner](screenshots/4_Target.PNG)
+
+### 5. GPA Scale Editor
+
+![GPA Scale](screenshots/5_GPA_Scale.PNG)
 
 ---
 
 ## ✨ Features
 
-| Feature                     | Description                                             |
-| --------------------------- | ------------------------------------------------------- |
-| **Single Semester**         | Enter subjects, marks, credit hours → instant SGPA      |
-| **Semesters by SGPA**       | Enter each semester's SGPA + credits → cumulative CGPA  |
-| **Multi-Semester Detailed** | Full subject tables per semester, save/load as JSON     |
-| **Target CGPA Planner**     | Enter your goal CGPA → get 4 strategy plans             |
-| **GPA Scale Editor**        | Edit the marks→GPA scale from the GUI — no code needed! |
-| **3 Themes**                | Light, Dark, and Blue-Dark modes                        |
-| **CSV Import/Export**       | Open and save semester data as CSV                      |
-| **Project Save/Load**       | Multi-semester projects saved as JSON                   |
+- 📊 **Single Semester** — Enter subjects, marks, credit hours → auto GPA
+- 📈 **Semesters by SGPA** — Enter SGPA per semester → Cumulative CGPA
+- 🗂️ **Multi-Semester** — Full subject-level detail across all semesters
+- 🎯 **Target CGPA Planner** — Find required GPA to reach your goal
+- ⚙️ **GPA Scale Editor** — Customize grading scale with presets
+- 🌙 **3 Themes** — Light, Dark, Blue
+- 💾 **CSV Import/Export** — Save and load your data
 
 ---
 
 ## 🚀 How to Run
 
+### Requirements
+
+- Python 3.8 or higher
+
+### Installation
+
 ```bash
-# Make sure Python 3.9+ is installed
+# 1. Clone the repository
+git clone https://github.com/abubakar-ahmad-ai/GPA-Suite.git
+
+# 2. Go into the folder
+cd GPA-Suite
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the app
 python main.py
 ```
-
-No pip install needed — everything uses Python's built-in libraries.
 
 ---
 
 ## 📁 Project Structure
 
-```
 GPA-Suite/
-├── main.py                    # Entry point
-├── requirements.txt
-├── README.md
-├── .gitignore
-│
+├── main.py # Entry point
 ├── core/
-│   ├── gpa_scale.py           # GPA scale logic + save/load
-│   └── calculator.py          # SGPA, CGPA, planner strategies
-│
+│ ├── calculator.py # GPA logic
+│ └── gpa_scale.py # Scale management
 ├── ui/
-│   ├── theme.py               # Colors, fonts, ttk styles
-│   ├── app.py                 # Main window
-│   ├── tabs/
-│   │   ├── single_semester.py
-│   │   ├── sgpa_only.py
-│   │   ├── multi_semester.py
-│   │   └── target_planner.py
-│   └── widgets/
-│       ├── scale_editor.py    # GUI-based GPA scale editor
-│       └── semester_panel.py  # Reusable semester panel
-│
-└── data/
-    └── custom_scale.json      # Saved custom scale (auto-created)
-```
-
----
-
-## ⚖️ GPA Scale
-
-Default scale uses **85 → 4.0** (common in Pakistani universities).
-
-You can change the scale at any time from the **GPA Scale** button in the toolbar — supports any university's grading system (80→4.0, 90→4.0, etc.).
-
----
-
-## ⌨️ Keyboard Shortcuts
-
-| Shortcut | Action                      |
-| -------- | --------------------------- |
-| `F5`     | Recalculate Single Semester |
-| `Ctrl+S` | Save CSV                    |
-| `Ctrl+O` | Open CSV                    |
-| `Ctrl+E` | Open GPA Scale Editor       |
-| `Ctrl+D` | Cycle Theme                 |
+│ ├── app.py # Main window
+│ ├── tabs/ # All 4 tabs
+│ ├── widgets/ # Scale editor, semester panel
+│ └── theme_manager.py # Theme switching
+├── screenshots/ # App screenshots
+├── requirements.txt
+└── README.md
 
 ---
 
 ## 👨‍💻 Author
 
-Made with ❤️ as a Python learning project.
-
----
-
-## 📄 License
-
-MIT License — free to use and modify.
+**Abubakar Ahmad**  
+GitHub: [@abubakar-ahmad-ai](https://github.com/abubakar-ahmad-ai)
